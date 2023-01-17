@@ -1,0 +1,42 @@
+<html>
+<head><title>
+Neon animated text </title>
+<link rel="stylesheet" href="style.css ">
+
+</head>
+<body>
+  <div class="parent">
+    
+    <div > 
+      <p class="DO"> My to do liste</p>
+
+    
+
+   
+  <ul>
+
+    <li>Buy milk</li>
+    <li>Take the dog for a walk</li>
+    <li>Exercise</li>
+    <li>Write code</li>
+    <li>Play music</li> 
+    <li>Relax</li>
+  </ul>
+</div>
+</div>
+  <script>
+    const list = document.querySelector("ul");
+list.addEventListener(
+  "click",
+  (ev) => {
+    if (ev.target.tagName === "LI") {
+      ev.target.classList.toggle("done");
+    }
+  },
+  false
+);
+  </script>
+                         
+
+</body>
+</html>
